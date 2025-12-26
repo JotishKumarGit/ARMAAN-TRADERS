@@ -1,0 +1,263 @@
+<!-- Enquiry Modal -->
+<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="enquiryModalLabel">Product Enquiry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="enquiryForm">
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Mobile Number</label>
+                            <input type="tel" id="mobile" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Write your message">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="4" required></textarea>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" onclick="sendWhatsApp()">
+                    Send Enquiry
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function sendWhatsApp() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        if (name === "" || email === "" || mobile === "" || message === "") {
+            alert("Please fill all required fields");
+            return;
+        }
+
+        var whatsappNumber = "9067115557";
+
+        var whatsappMessage =
+            "Product Enquiry:%0A%0A" +
+            "Name: " + name + "%0A" +
+            "Email: " + email + "%0A" +
+            "Mobile: " + mobile + "%0A" +
+            "Subject: " + subject + "%0A" +
+            "Message: " + message;
+
+        var whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+
+        window.open(whatsappURL, "_blank");
+    }
+</script>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content ">
+
+        <!-- Company Info -->
+        <div class="footer-section">
+            <h3 class="text-white">ARMAAN TRADERS AN MANUFACTURE</h3>
+            <p>
+                We are a trusted manufacturer of premium quality Incense Sticks and raw materials.
+                Our products are known for purity, long-lasting fragrance and consistent quality.
+            </p>
+
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Instagram">📸</a>
+                <a href="#" title="WhatsApp">💬</a>
+                <a href="#" title="YouTube">▶️</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section  text-start">
+            <h3 class="text-white">QUICK LINKS</h3>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="footer-section">
+            <h3 class="text-white">OUR PRODUCTS</h3>
+            <ul>
+                <li><a href="MOSQUITO_INCENSE_STICKS.php">Mosquito Incense Sticks</a></li>
+                <li><a href="MASALA_INCENSE_STICKS.php">Masala Incense Sticks</a></li>
+                <li><a href="RAW_WHITE_INCENSE_STICKS.php">Raw Incense Sticks</a></li>
+                <li><a href="BAMBOO_STICKS.php">Bamboo Sticks</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3 class="text-white">CONTACT INFO</h3>
+            <ul>
+                <li>📍 <span>Factory Address :</span> Plot No 118 and 141 Near Baitul Hamd Masjid Nizamuddin Colony
+                    ita Bhatta Square NAGPUR
+                    Maharashtra India 440017</li>
+                <li>📍 <span>Office Address :</span> Plot No 79 Om Sai Nagar Near Sai Mandir Sai Baba chowk Kalamna
+                    NAGPUR 440026</li>
+                <li>📞 +91 9067115557</li>
+                <li>✉️ armaantraderm@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="col-12">
+                <h3 class="text-white mb-3">Our Location</h3>
+
+                <div class="d-flex flex-column flex-md-row gap-4">
+
+                    <!-- Factory Location -->
+                    <div class="contact-item w-100">
+                        <p class="fw-bold text-white mb-2">Factory Location</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3720.4978835424354!2d79.14522337526053!3d21.172371680513173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDEwJzIwLjUiTiA3OcKwMDgnNTIuMSJF!5e0!3m2!1sen!2sin!4v1766485626856!5m2!1sen!2sin"
+                                loading="lazy" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Office Location -->
+                    <div class="contact-item w-100">
+                        <p class="fw-bold text-white mb-2">Office Location</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3720.4978835424354!2d79.14522337526053!3d21.172371680513173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDEwJzIwLjUiTiA3OcKwMDgnNTIuMSJF!5e0!3m2!1sen!2sin!4v1766559269638!5m2!1sen!2sin"
+                                loading="lazy" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>
+            © 2025 ARMAAN TRADERS AN MANUFACTURE. All Rights Reserved.
+        </p> Designed By <span><a href="https://www.trade4export.com/">Trade4Export</a></span>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Toggle mobile menu
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Mobile Dropdown Toggle
+    const dropdown = document.getElementById('products-dropdown');
+    const dropdownLink = dropdown.querySelector('.nav-link');
+
+    dropdownLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+        }
+    });
+
+    // Close mobile menu when clicking on a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                mobileMenu.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !mobileMenu.contains(e.target)) {
+            navMenu.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        }
+    });
+</script>
+
+<!-- news letter js -->
+<script>
+    function subscribeNewsletter(event) {
+        event.preventDefault();
+        const email = document.getElementById("newsletterEmail").value;
+
+        alert("Thank you for subscribing! \nEmail: " + email);
+
+        document.getElementById("newsletterEmail").value = "";
+    }
+</script>
+
+<!-- send message on whatsapp  -->
+<script>
+    function sendWhatsAppMessage(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        const whatsappNumber = "9067115557"; // 👉 apna WhatsApp number (country code ke sath)
+
+        const whatsappMessage =
+            `Hello, I would like to contact you.%0A%0A` +
+            `Name: ${name}%0A` +
+            `Phone: ${phone}%0A` +
+            `Message: ${message}`;
+
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+        window.open(whatsappURL, "_blank");
+    }
+</script>
+
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

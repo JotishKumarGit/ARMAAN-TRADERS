@@ -14,62 +14,8 @@
 
 <body>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-bar-content">
-            <div class="top-bar-item">
-                <span>📞</span>
-                <span>+91 9067115557</span>
-            </div>
-            <div class="top-bar-item">
-                <span>📧</span>
-                <span>GST: 27EEVPM2313K1Z1</span>
-            </div>
-            <div class="top-bar-item">
-                <span>✉️ armaantraderm@gmail.com </span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo" class="me-3" style="margin-right: 20px;"><img src="assets/img/arman_logo.jpeg"
-                    height="80px" width="100%" alt=""></a>
-            <!-- <a href="#" class="logo">ARMAAN TRADERS AN MANUFACTURE</a> -->
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link"><i class="bi bi-house-door"></i> Home</a></li>
-                <li><a href="#about" class="nav-link"><i class="bi bi-info-circle"></i> About</a></li>
-                <li class="dropdown">
-                    <a href="#products" class="nav-link"> <i class="bi bi-box-seam"></i> Products ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#products">WHITE WOOD POWDER</a>
-                        <a href="#products">BAMBOO STICKS</a>
-                        <a href="#products">GUAR GUM POWDER</a>
-                        <a href="#products">LOBHAN PREMIX</a>
-                        <a href="#products">MASALA INCENSE STICKS</a>
-                        <a href="#products">MOSQUITO INCENSE STICKS</a>
-                        <a href="#products">METALIC INCENSE STICKS</a>
-                        <a href="#products">RANGOLI COLOUR SCENTED INCENSE STICKS</a>
-                        <a href="#products">RAW COLOUR INCENSE STICKS</a>
-                        <a href="#products">RAW Mosquito INCENSE STICKS</a>
-                        <a href="#products">RAW WHITE INCENSE STICKS</a>
-                        <a href="#products">SCENTED COLOUR INCENSE STICKS</a>
-                    </div>
-                </li>
-                <li><a href="#services" class="nav-link"><i class="bi bi-gear"></i> Services</a></li>
-                <li><a href="#gallery" class="nav-link"><i class="bi bi-images"></i> Gallery</a></li>
-                <li><a href="#blog" class="nav-link"><i class="bi bi-pencil-square"></i> Blog</a></li>
-                <li><a href="award.html" class="nav-link">🏅 Award</a></li>
-                <li><a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- header  -->
+    <?php include('header.php') ?>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -155,7 +101,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">WHITE WOOD POWDER</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="WHITE_WOOD_POWDER.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -165,7 +111,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">RAW WHITE INCENSE STICKS</h3>
-                        <a href="#" class=" cta-button">View Details</a>
+                        <a href="RAW_WHITE_INCENSE_STICKS.php" class=" cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -175,17 +121,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">RAW MOSQUITO INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/img/Raw_Colour_Agarbatti.jpeg" alt="Raw Colour Agarbatti">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="text-dark">RAW COLOUR INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="RAW_MOSQUITO_INCENSE_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -195,8 +131,8 @@
                             alt="Rangoli Scented Colour Agarbatti">
                     </div>
                     <div class="product-info">
-                        <h3 class="text-dark">RANGOLI COLOUR SCENTED INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <h3 class="text-dark">RANGOLI COLOR SCENTED INCENSE STICKS</h3>
+                        <a href="RANGOLI_COLOR_SCENTED_INCENSE_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -206,7 +142,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">METALIC INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="METALIC_INCENSE_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -216,7 +152,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">MOSQUITO INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="MOSQUITO_INCENSE_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -226,7 +162,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">MASALA INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="MASALA_INCENSE_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -236,17 +172,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">LOBHAN PREMIX</h3>
-                        <a href="#" class="cta-button">View Details</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/img/Lobhan_Agarbatti.jpeg" alt="Lobhan Agarbatti">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="text-dark">LOBHAN INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="LOBHAN_PREMIX.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -256,7 +182,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="text-dark">GUAR GUM POWDER</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <a href="GUAR_GUM_POWDER.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -265,8 +191,8 @@
                         <img src="assets/img/Bamboo_sticks.jpeg" alt="Bamboo Sticks">
                     </div>
                     <div class="product-info">
-                        <h3 class="text-dark">CHAINA BAMBOO STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <h3 class="text-dark">BAMBOO STICKS</h3>
+                        <a href="BAMBOO_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -275,8 +201,8 @@
                         <img src="assets/img/Scented_Colour.jpeg" alt="Bamboo Sticks">
                     </div>
                     <div class="product-info">
-                        <h3 class="text-dark">SCENTED COLOUR INCENSE STICKS</h3>
-                        <a href="#" class="cta-button">View Details</a>
+                        <h3 class="text-dark">SCENTED COLOR INCENSE STICKS</h3>
+                        <a href="SCENTED_COLOUR_INCENSE_STICKS.php" class="cta-button">View Details</a>
                     </div>
                 </div>
 
@@ -599,184 +525,5 @@
     </section>
     <!-- End Newsletter Section -->
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content ">
-
-            <!-- Company Info -->
-            <div class="footer-section">
-                <h3 class="text-white">ARMAAN TRADERS AN MANUFACTURE</h3>
-                <p>
-                    We are a trusted manufacturer of premium quality Incense Sticks and raw materials.
-                    Our products are known for purity, long-lasting fragrance and consistent quality.
-                </p>
-
-                <div class="social-links">
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Instagram">📸</a>
-                    <a href="#" title="WhatsApp">💬</a>
-                    <a href="#" title="YouTube">▶️</a>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-section  text-start">
-                <h3 class="text-white">QUICK LINKS</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Products -->
-            <div class="footer-section">
-                <h3 class="text-white">OUR PRODUCTS</h3>
-                <ul>
-                    <li><a href="#products">Mosquito Incense Sticks</a></li>
-                    <li><a href="#products">Masala Incense Sticks</a></li>
-                    <li><a href="#products">Lobhan Incense Sticks</a></li>
-                    <li><a href="#products">Raw Incense Sticks</a></li>
-                    <li><a href="#products">Bamboo Sticks</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="footer-section">
-                <h3 class="text-white">CONTACT INFO</h3>
-                <ul>
-                    <li>📍 <span>Factory Address :</span> Plot No 118 and 141 Near Baitul Hamd Masjid Nizamuddin Colony
-                        ita Bhatta Square NAGPUR
-                        Maharashtra India 440017</li>
-                    <li>📍 <span>Office Address :</span> Plot No 79 Om Sai Nagar Near Sai Mandir Sai Baba chowk Kalamna
-                        NAGPUR 440026</li>
-                    <li>📞 +91 9067115557</li>
-                    <li>✉️ armaantraderm@gmail.com</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="col-12">
-                    <h3 class="text-white mb-3">Our Location</h3>
-
-                    <div class="d-flex flex-column flex-md-row gap-4">
-
-                        <!-- Factory Location -->
-                        <div class="contact-item w-100">
-                            <p class="fw-bold text-white mb-2">Factory Location</p>
-                            <div class="ratio ratio-16x9">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3720.4978835424354!2d79.14522337526053!3d21.172371680513173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDEwJzIwLjUiTiA3OcKwMDgnNTIuMSJF!5e0!3m2!1sen!2sin!4v1766485626856!5m2!1sen!2sin"
-                                    loading="lazy" allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                        <!-- Office Location -->
-                        <div class="contact-item w-100">
-                            <p class="fw-bold text-white mb-2">Office Location</p>
-                            <div class="ratio ratio-16x9">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3720.4978835424354!2d79.14522337526053!3d21.172371680513173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDEwJzIwLjUiTiA3OcKwMDgnNTIuMSJF!5e0!3m2!1sen!2sin!4v1766559269638!5m2!1sen!2sin"
-                                    loading="lazy" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <p>
-                © 2025 ARMAAN TRADERS AN MANUFACTURE. All Rights Reserved.
-            </p> Designed By <span><a href="https://www.trade4export.com/">Trade4Export</a></span>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        // Toggle mobile menu
-        mobileMenu.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Mobile Dropdown Toggle
-        const dropdown = document.getElementById('products-dropdown');
-        const dropdownLink = dropdown.querySelector('.nav-link');
-
-        dropdownLink.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                dropdown.classList.toggle('active');
-            }
-        });
-
-        // Close mobile menu when clicking on a link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (navMenu.classList.contains('active')) {
-                    mobileMenu.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                }
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navMenu.contains(e.target) && !mobileMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                mobileMenu.classList.remove('active');
-            }
-        });
-    </script>
-
-    <!-- news letter js -->
-    <script>
-        function subscribeNewsletter(event) {
-            event.preventDefault();
-            const email = document.getElementById("newsletterEmail").value;
-
-            alert("Thank you for subscribing! \nEmail: " + email);
-
-            document.getElementById("newsletterEmail").value = "";
-        }
-    </script>
-
-    <!-- send message on whatsapp  -->
-    <script>
-        function sendWhatsAppMessage(event) {
-            event.preventDefault();
-
-            const name = document.getElementById("name").value;
-            const phone = document.getElementById("phone").value;
-            const message = document.getElementById("message").value;
-
-            const whatsappNumber = "919876543210"; // 👉 apna WhatsApp number (country code ke sath)
-
-            const whatsappMessage =
-                `Hello, I would like to contact you.%0A%0A` +
-                `Name: ${name}%0A` +
-                `Phone: ${phone}%0A` +
-                `Message: ${message}`;
-
-            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-
-            window.open(whatsappURL, "_blank");
-        }
-    </script>
-
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <!-- Footer -->
+    <?php include('footer.php') ?>

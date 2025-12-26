@@ -128,7 +128,7 @@ body {
 
 .dropdown-content a {
     display: block;
-    padding: 12px 20px;
+    padding: 5px 10px;
     color: #000;
     text-decoration: none;
     transition: 0.3s;
@@ -817,4 +817,53 @@ section {
     .blog-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* bread crumb  */.breadcrumb {
+    position: relative;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center; /* center horizontally */
+    padding: 15px 25px;
+    background-image: url("./img/Masala_Agarbatti.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.breadcrumb::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* adjust darkness */
+    z-index: 1;
+}
+
+/* Breadcrumb content */
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.crumb {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.crumb.active {
+    font-weight: bold;
+    cursor: default;
 }
